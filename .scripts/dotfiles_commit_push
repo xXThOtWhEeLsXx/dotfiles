@@ -1,0 +1,9 @@
+#!/bin/bash -i
+shopt -s expand_aliases
+
+
+config commit -a -m "$(date +%d/%m/%Y\ @\ %H:%M)"
+
+config push
+
+

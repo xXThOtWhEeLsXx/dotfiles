@@ -26,12 +26,12 @@ font pango:monospace 8
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i
 exec xrdb /home/gby/.Xresources
-exec sudo /root/.local/share/ruby/gem/3.0.0/bin/fusuma
 exec picom
 exec setxkbmap gb
 exec sleep 1 && xrandr --output HDMI-0 --mode 1920x1080 && xrandr --output DP-2 --left-of HDMI-0 && xrandr --output DP-2 --mode 3840x2160 -r 144 --primary && nitrogen --restore
 exec polkit-dumb-agent
 exec ckb-next -b
+exec ./.scripts/dotfiles_commit_push
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
