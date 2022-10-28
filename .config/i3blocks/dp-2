@@ -59,6 +59,10 @@ signal=1
 ### SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
 ##SUBSCRIBE=0
 
+[spotifyd]
+interval=5
+color=#00FF00
+
 [headset]
 command=sudo headsetcontrol -b | grep Battery
 interval=60
