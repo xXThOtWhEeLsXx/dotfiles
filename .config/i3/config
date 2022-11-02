@@ -66,7 +66,7 @@ bindsym Ctrl+$mod+Delete exec "sh /home/gby/.config/rofi/powermenu/type-1/powerm
 
 
 #Lock 
-bindsym $mod+l exec "betterlockscreen -l"
+bindsym $mod+l exec "i3lock -B 5 -k --time-color=ffffff --date-color=ffffff --indicator"
 
 # kill focused window
 bindsym $mod+w kill
@@ -209,16 +209,16 @@ for_window [ title="Friends List" ] floating enable
 # finds out, if available)
 bar {
         status_command i3blocks -c /home/gby/.config/i3blocks/dp-2
-	font pango:Fira Code Light 8 
+	font pango:Fira Code Light 13
 	tray_output DP-2
 	output DP-2
 }
 
 bar {
         status_command i3blocks -c /home/gby/.config/i3blocks/hdmi-0
-        font pango:Fira Code Light 10
+        font pango:Fira Code Light 15
         tray_output DP-2
         output HDMI-0
 }
-gaps inner 10 
-gaps outer 5
+#gaps inner 10 
+#gaps outer 5
